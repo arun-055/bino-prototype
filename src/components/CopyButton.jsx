@@ -12,9 +12,8 @@ const CopyButton = ({ movie }) => {
 
   return (
     <button onClick={handleCopy}
-   className=" px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-500 transition "
-    >
-      <div className="text-white mb-1" >Copy</div>
+   className="h-10 px-4 flex items-center justify-center rounded-xl bg-gray-800 hover:bg-gray-700 transition text-white text-sm font-medium shrink-0">
+      Copy  
     </button>
   );
 };
