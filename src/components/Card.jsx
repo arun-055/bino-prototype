@@ -54,7 +54,7 @@ export default function Card({
   </button>
 
  
-  <div className="w-[60px] flex justify-end shrink-0"> 
+  <div className="w-[60px] flex justify-end shrink-0 ml-0.5"> 
     <CopyButton movie={movie} />
   </div>
 </div>
