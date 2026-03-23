@@ -48,13 +48,13 @@ export default function Card({
 
   <button
     onClick={handleShare}
-    className="bg-green-500 text-white h-10 rounded-full text-[10px] sm:text-xs font-bold whitespace-nowrap hover:bg-green-600 transition px-2 min-w-0 overflow-hidden text-center"
+    className="bg-green-500 text-white h-10 rounded-full text-[10px] font-bold whitespace-nowrap hover:bg-green-600 transition px-1 min-w-0 overflow-hidden flex items-center justify-center"
   >
     Share on WhatsApp
   </button>
 
  
-  <div className="w-12 flex justify-end"> 
+  <div className="w-[60px] flex justify-end shrink-0"> 
     <CopyButton movie={movie} />
   </div>
 </div>
