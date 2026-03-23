@@ -36,25 +36,28 @@ export default function Card({
       <div className="p-3 flex flex-col flex-1 justify-between">
         <h2 className="text-white font-medium truncate mb-2">{name}</h2>
 
-        <div className="flex items-center gap-2 mt-auto">
-          <button
-            onClick={handleLike}
-            className="text-xl px-3 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 transition shrink-0"
-          >
-            {isLiked ? "❤️" : "💚"}
-          </button>
+       <div className="grid grid-cols-[auto_1fr_auto] items-center gap-2 mt-auto w-full">
+ 
+  <button
+    onClick={handleLike}
+    className="w-10 h-10 flex items-center justify-center shrink-0 rounded-xl bg-gray-800 hover:bg-gray-700 transition"
+  >
+    {isLiked ? "❤️" : "💚"}
+  </button>
 
-          <button
-            onClick={handleShare}
-            className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap hover:bg-green-600 transition flex-grow"
-          >
-            Share on WhatsApp
-          </button>
 
-          <div className="shrink-0">
-            <CopyButton movie={movie} />
-          </div>
-        </div>
+  <button
+    onClick={handleShare}
+    className="bg-green-500 text-white h-10 rounded-full text-[10px] sm:text-xs font-bold whitespace-nowrap hover:bg-green-600 transition px-2 min-w-0 overflow-hidden text-center"
+  >
+    Share on WhatsApp
+  </button>
+
+ 
+  <div className="w-12 flex justify-end"> 
+    <CopyButton movie={movie} />
+  </div>
+</div>
       </div>
     </div>
   );
